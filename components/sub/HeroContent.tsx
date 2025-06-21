@@ -8,6 +8,12 @@ import Image from 'next/image';
 
 const HeroContent: React.FC = () => {
     return (
+        <motion.div
+  id="aboutme"
+  initial="Hidden"
+  animate="visible"
+  className='flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]'
+>
       <motion.div
       initial="Hidden"
       animate="visible"
@@ -34,16 +40,10 @@ const HeroContent: React.FC = () => {
             <motion.p 
             variants={slideInFromLeft(0.8)}
             className='text-lg text-gray-400 my-5 max-w-[600px]'>
-                I&apos;m a full stack software engineer with experience in website mobile and software delep chekcewiffnvgfnvjtrngg
+                I&apos;m a Full stack software engineer with experience in website frontend and backend development and currently venturing into web3 tech.
 
             </motion.p>
-            <motion.a
-           variants={slideInFromLeft(1)}
-           className='py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]'
-           >
-            Learn more!
-
-            </motion.a>
+           
 
         </div>
         <motion.div
@@ -58,6 +58,7 @@ const HeroContent: React.FC = () => {
             />
         </motion.div>
 
+      </motion.div>
       </motion.div>
     );
 };
